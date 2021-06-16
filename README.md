@@ -1,6 +1,16 @@
 # test approach and bugs
-- test approach including manual testing and autoamtion testing (test design) under folder testApproachAndBugs
-- bugs or questions list is a separate file under folder testApproachAndBugs
+## test approach
+- using mindmap to design test cases
+- test cases marked by blue color are for automation
+- items marked by orange color are bugs or my questions (light orange for minor, dark orange for critical)
+## bugs list 
+### critical
+- when logged out, it still can change the user's profile
+### middle or minor
+- password restrictions are better to show to user in advance
+- User profile Gender the input should be restricted?
+- if use long string, unknown error
+
 
 
 # automation
