@@ -13,5 +13,6 @@ prerequistites:
 
 test cases execution:
 1. "BuggyRatingLogin" under test case folder, double clicking, then click "run" button on the top right.
+   -https://docs.katalon.com/katalon-studio/docs/execute-a-test-case-or-a-test-suite.html#execute-a-test-case-or-a-test-suite
 <img width="1669" alt="BuggyRatingLogin" src="https://user-images.githubusercontent.com/3717530/122308742-0d7ceb80-cf61-11eb-9c08-9b60dccd2a87.png">
 2 . using same method, we can run another 2 test cases "MakeName" and "requestModules"
