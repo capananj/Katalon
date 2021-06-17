@@ -8,17 +8,17 @@
 ## Bugs List 
 ### critical
 - when logged out, it still can change the user's profile
-- page navigation clicking any car model, the link can't open, 400 Bad Request (might be because car model id contain non-encoded special charactor which caused the url invaild, should use %7C instead of |)
+- page navigation clicking any car model, the link can't open, 400 Bad Request (might be because car model id contain non-encoded special character which caused the url invalid, should use %7C instead of |)
 - sometime it can not go back to the dash board page by clicking the top left corner icon
-- pagenation it allows to input page number, but doesn't work
+- pagination it allows to input page number, but doesn't work
 - cannot add comments?
 - view comments error because of the invalid car model id probably
 
 ### medium or minor
 - registration password restrictions are better to show to user in advance
 - User profile Gender the input should be restricted?
-- User profile Gender if ths input is long string, unknown error
-- User profile Age 0-95 make sence?
+- User profile Gender if the input is long string, unknown error
+- User profile Age 0-95 make sense?
 - User profile Age input 0 cannot be saved
 - User profile phone format no checking
 - User profile password change on "additional info" section? 
@@ -30,8 +30,8 @@
 
 
 # Automation
-## prerequistites:
-1. download Katalon studio and instill it, https://www.katalon.com/
+## prerequisites:
+1. download Katalon studio and install it, https://www.katalon.com/
    - please follow this guide https://docs.katalon.com/katalon-studio/docs/getting-started.html#installation
 2. git clone or download the project files under folder "My First Web UI Project" to your local PC
 3. open this project folder in your local PC by katalon studio
@@ -51,7 +51,7 @@
    - expect, the returned car make's name should be same to the input expected name
 3. Models/requestModelsVerification
    - test get car models API, it should return json file include car models info
-   - input get api url inlcuding car model id
+   - input get api url including car model id
    - expect return car model json info
    - actual result: car model page broken because of the card model id contain non-encoded speical character 
 
