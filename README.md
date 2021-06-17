@@ -1,11 +1,11 @@
-# test approach and bugs
-## test approach
+# Test Approach and Bugs
+## Test Approach
 - using mindmap to design test cases
 - test cases marked by blue color are for automation
 - items marked by orange color are bugs or my questions (light orange for minor, dark orange for critical)
 <img width="1955" alt="Test Design" src="https://user-images.githubusercontent.com/3717530/122318807-cb10da00-cf73-11eb-90a7-8734475c80a3.png">
 
-## bugs list 
+## Bugs List 
 ### critical
 - when logged out, it still can change the user's profile
 - page navigation clicking any car model, the link can't open, 400 Bad Request (might be because car model id contain non-encoded special charactor which caused the url invaild, should use %7C instead of |)
@@ -29,7 +29,7 @@
 
 
 
-# automation
+# Automation
 ## prerequistites:
 1. download Katalon studio and instill it, https://www.katalon.com/
    - please follow this guide https://docs.katalon.com/katalon-studio/docs/getting-started.html#installation
