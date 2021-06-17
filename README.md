@@ -1,26 +1,42 @@
-# test approach and bugs
-## test approach
+# Test Approach and Bugs
+## Test Approach
 - using mindmap to design test cases
 - test cases marked by blue color are for automation
 - items marked by orange color are bugs or my questions (light orange for minor, dark orange for critical)
-## bugs list 
+<img width="1955" alt="Test Design" src="https://user-images.githubusercontent.com/3717530/122318807-cb10da00-cf73-11eb-90a7-8734475c80a3.png">
+
+## Bugs List 
 ### critical
 - when logged out, it still can change the user's profile
+- page navigation clicking any car model, the link can't open, 400 Bad Request (might be because car model id contain non-encoded special charactor which caused the url invaild, should use %7C instead of |)
+- sometime it can not go back to the dash board page by clicking the top left corner icon
+- pagenation it allows to input page number, but doesn't work
+- cannot add comments?
+- view comment error because of the invalid car model id probably
+
 ### middle or minor
-- password restrictions are better to show to user in advance
+- registration password restrictions are better to show to user in advance
 - User profile Gender the input should be restricted?
-- if use long string, unknown error
+- User profile Gender if ths input is long string, unknown error
+- User profile Age 0-95 make sence?
+- User profile Age input 0 cannot be saved
+- User profile phone format no checking
+- User profile password change on "additional info" section? 
+- sorting Model and Rank don't work
+- sorting Votes clicking then looks like sorting changed, but it is wired
+- external link facebook and twitter link are not related to this website' account
+- copyright outdated?
 
 
 
-# automation
+# Automation
 ## prerequistites:
 1. download Katalon studio and instill it, https://www.katalon.com/
    - please follow this guide https://docs.katalon.com/katalon-studio/docs/getting-started.html#installation
 2. git clone or download the project files under folder "My First Web UI Project" to your local PC
 3. open this project folder in your local PC by katalon studio
    - please follow this doc https://docs.katalon.com/katalon-studio/docs/manage-test-project.html#open-an-existing-test-project
-4. need bearer to run the backend API test cases
+4. need bearer to run the backend API test cases (sensitive data cannot put on github)
 
 ## automation test cases explanation
 1. BuggyRatingLogin 
@@ -34,6 +50,9 @@
    - expect, the returned car make's name should be same to the input expected name
 3. requestModules
    - test get car models API, it should return json file include car models info
+   - input get api url inlcuding car model id
+   - expect return car model json info
+   - actual result: car model page broken because of the card model id contain non-encoded speical character 
 
 ## test cases execution:
 1. "BuggyRatingLogin" under test case folder, double clicking, then click "run" button on the top right.
