@@ -3,7 +3,8 @@
 - using mindmap to design test cases
 - test cases marked by blue color are for automation
 - items marked by orange color are bugs or my questions (light orange for minor, dark orange for critical)
-<img width="1955" alt="Test Design" src="https://user-images.githubusercontent.com/3717530/122322582-c9e2ab80-cf79-11eb-9d6a-6f4cf7fbf67b.png">
+<img width="1955" alt="Test Design" src="https://user-images.githubusercontent.com/3717530/122322750-16c68200-cf7a-11eb-8e3d-18d23a442a65.png">
+
 
 
 ## Bugs List 
@@ -52,7 +53,8 @@
    - expect, the returned car make's name should be same to the input expected name
 3. Models/requestModelsVerification
    - test get car models API, it should return json file include car models info
-   - input get api url including car model id
+   - input get api url including car make id
+   - logical: through the above car make id, we can get all car models under this make, loop all car model id in json file to see if all model link work not not
    - expect return car model json info
    - actual result: car model page broken because of the card model id contain non-encoded speical character 
 
