@@ -12,9 +12,9 @@
 - sometime it can not go back to the dash board page by clicking the top left corner icon
 - pagenation it allows to input page number, but doesn't work
 - cannot add comments?
-- view comment error because of the invalid car model id probably
+- view comments error because of the invalid car model id probably
 
-### middle or minor
+### medium or minor
 - registration password restrictions are better to show to user in advance
 - User profile Gender the input should be restricted?
 - User profile Gender if ths input is long string, unknown error
@@ -39,16 +39,17 @@
 4. need bearer to run the backend API test cases (sensitive data cannot put on github)
 
 ## automation test cases explanation
+** please see the 3 test cases' script under Katalon/My First Web UI Project/Scripts/ **
 1. BuggyRatingLogin 
    - test login process from WebUI, it includes frontend and backend, 
    - prerequisities: sign up a user, I already sign up a user "testaaa"
    - expect it should return status code 200
-2. MakeName
+2. Makes/makeNameVerification
    - test get car make API, the return json file contains lots of info such as name, description, image, models, we will take the name as example
    - get a specific car make's name by API, it belongs backend API testing.
    - input, the specific car make' id and expected car make's name
    - expect, the returned car make's name should be same to the input expected name
-3. requestModules
+3. Models/requestModelsVerification
    - test get car models API, it should return json file include car models info
    - input get api url inlcuding car model id
    - expect return car model json info
@@ -58,4 +59,4 @@
 1. "BuggyRatingLogin" under test case folder, double clicking, then click "run" button on the top right.
    -https://docs.katalon.com/katalon-studio/docs/execute-a-test-case-or-a-test-suite.html#execute-a-test-case-or-a-test-suite
 <img width="1669" alt="BuggyRatingLogin" src="https://user-images.githubusercontent.com/3717530/122308742-0d7ceb80-cf61-11eb-9c08-9b60dccd2a87.png">
-2 . using same method, we can run another 2 test cases "MakeName" and "requestModules"
+2 . using same method, we can run another 2 test cases "Makes/makeNameVerification" and "Models/requestModelsVerification"
