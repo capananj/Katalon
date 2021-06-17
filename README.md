@@ -39,7 +39,7 @@
 4. need bearer to run the backend API test cases (sensitive data cannot put on github)
 
 ## automation test cases explanation
-** please see the 3 test cases' script under Katalon/My First Web UI Project/Scripts/ **
+   **please see the 3 test cases' script under Katalon/My First Web UI Project/Scripts/**
 1. BuggyRatingLogin 
    - test login process from WebUI, it includes frontend and backend, 
    - prerequisities: sign up a user, I already sign up a user "testaaa"
