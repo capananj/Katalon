@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper
 
-response = WS.sendRequest(findTestObject('Makes/getMake'))
+response = WS.sendRequest(findTestObject('APIs/getMake'))
 System.out.println(response.responseBodyContent)
 
 JsonSlurper slurper = new JsonSlurper()

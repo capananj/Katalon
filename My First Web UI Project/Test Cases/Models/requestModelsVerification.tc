@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>requestModules</name>
+   <name>requestModelsVerification</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>1d6552c8-27d3-4421-a4a6-58f0df74e0ea</testCaseGuid>
