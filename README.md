@@ -3,7 +3,8 @@
 - using mindmap to design test cases
 - test cases marked by blue color are for automation
 - items marked by orange color are bugs or my questions (light orange for minor, dark orange for critical)
-<img width="1955" alt="Test Design" src="https://user-images.githubusercontent.com/3717530/122318807-cb10da00-cf73-11eb-90a7-8734475c80a3.png">
+<img width="1955" alt="Test Design" src="https://user-images.githubusercontent.com/3717530/122322582-c9e2ab80-cf79-11eb-9d6a-6f4cf7fbf67b.png">
+
 
 ## Bugs List 
 ### critical
